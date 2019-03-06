@@ -1,4 +1,3 @@
-# Object Model Lab
 
 # React & React Router Lab
 
