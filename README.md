@@ -1,4 +1,4 @@
-# Object Model Lab [![pipeline status](https://www-apps.univ-lehavre.fr/forge/kd184351/WEB-objectmodel-lab/badges/master/pipeline.svg)](https://www-apps.univ-lehavre.fr/forge/kd184351/WEB-objectmodel-lab/commits/master) [![coverage report](https://www-apps.univ-lehavre.fr/forge/kd184351/WEB-objectmodel-lab/badges/master/coverage.svg)](https://www-apps.univ-lehavre.fr/forge/kd184351/WEB-objectmodel-lab/commits/master)
+# Object Model Lab
 
 # React & React Router Lab
 
