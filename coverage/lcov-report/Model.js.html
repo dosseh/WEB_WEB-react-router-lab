@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Model.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> Model.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.06% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const version = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >"1.0.0";</span>
+&nbsp;
+export class Data {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor(value) {
+<span class="cstat-no" title="statement not covered" >    this._value = value;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>t value() {
+<span class="cstat-no" title="statement not covered" >    return this._value || [];</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  se</span>t value(value) {
+<span class="cstat-no" title="statement not covered" >    this._value = value;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>tAverage() {
+<span class="cstat-no" title="statement not covered" >    for (var i = 0; i &lt; this.value.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!Number(this.value[i])) {</span>
+<span class="cstat-no" title="statement not covered" >        return "Pas de valeur moyenne pour ce capteur !";</span>
+      }
+    }
+    var sum = <span class="cstat-no" title="statement not covered" >0;</span>
+<span class="cstat-no" title="statement not covered" >    for (i = 0; i &lt; this.value.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      sum += parseFloat(this.value[i]);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return sum / this.value.length;</span>
+  }
+<span class="fstat-no" title="function not covered" >  ge</span>tlastValues() {
+<span class="cstat-no" title="statement not covered" >    return " " + this.value[this.value.length - 1] + "";</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>tDate() {
+<span class="cstat-no" title="statement not covered" >    return new Date().toLocaleString();</span>
+  }
+}
+&nbsp;
+export class Sensor {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor(id, name, data, type) {
+<span class="cstat-no" title="statement not covered" >    this._id = id;</span>
+<span class="cstat-no" title="statement not covered" >    this._name = name;</span>
+<span class="cstat-no" title="statement not covered" >    this._data = data;</span>
+<span class="cstat-no" title="statement not covered" >    this._type = type;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>t id() {
+<span class="cstat-no" title="statement not covered" >    return this._id || "";</span>
+  }
+<span class="fstat-no" title="function not covered" >  ge</span>t name() {
+<span class="cstat-no" title="statement not covered" >    return this._name || "";</span>
+  }
+<span class="fstat-no" title="function not covered" >  ge</span>t data() {
+<span class="cstat-no" title="statement not covered" >    return this._data || {};</span>
+  }
+<span class="fstat-no" title="function not covered" >  ge</span>t type() {
+<span class="cstat-no" title="statement not covered" >    return this._type || "";</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  se</span>t id(id) {
+<span class="cstat-no" title="statement not covered" >    this._id = id;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  se</span>t name(name) {
+<span class="cstat-no" title="statement not covered" >    this._name = name;</span>
+  }
+<span class="fstat-no" title="function not covered" >  se</span>t data(data) {
+<span class="cstat-no" title="statement not covered" >    this._data = data;</span>
+  }
+<span class="fstat-no" title="function not covered" >  se</span>t type(type) {
+<span class="cstat-no" title="statement not covered" >    this._type = type;</span>
+  }
+&nbsp;
+  unityOfSensor = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    HashMapUnity["TEMPERATURE"] = " °C ";</span>
+<span class="cstat-no" title="statement not covered" >    HashMapUnity["PERCENT"] = " % ";</span>
+<span class="cstat-no" title="statement not covered" >    HashMapUnity["OPEN_CLOSE"] = "";</span>
+&nbsp;
+    var values = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >    if (HashMapUnity.hasOwnProperty(this.type))</span>
+<span class="cstat-no" title="statement not covered" >      values.push(HashMapUnity[this.type]);</span>
+<span class="cstat-no" title="statement not covered" >    return values.join("");</span>
+  };
+}
+&nbsp;
+const HashMapUnity = {};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 02 2019 17:25:19 GMT+0100 (GMT+01:00)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
